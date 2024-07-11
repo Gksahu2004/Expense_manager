@@ -1,0 +1,244 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+*{
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f9f9f9;
+  /* font-family: Arial, sans-serif; */
+  /* font-family: "Poppins", sans-serif; */
+
+}
+
+/* Navbar section  */
+
+#navbar1 {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 3;
+  }
+  
+  #logo{
+    background-color: black;
+    border-radius: 50%;
+  }
+  
+
+/* core members section  */
+
+.our-team {
+  text-align: center;
+  padding: 50px 20px;
+}
+.our-team h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  white-space: nowrap; /* Keeps the text on a single line */
+  border-right: 0.15em solid orange; /* Creates the typewriter cursor effect */
+  overflow: hidden; /* Ensures the text doesn't overflow its container */
+  display: inline-block;
+  animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+/* Typing effect */
+@keyframes typing {
+  from {
+      width: 0;
+  }
+  to {
+      width: 100%;
+  }
+}
+
+/* Blinking cursor effect */
+@keyframes blink-caret {
+  from, to {
+      border-color: transparent;
+  }
+  50% {
+      border-color: orange;
+  }
+}
+
+/* .our-team h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #333; Darker text color
+} */
+
+.team-members {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.member {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 250px;
+  flex: 1 1 200px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add smooth transitions */
+}
+
+.member:hover {
+  transform: scale(1.05); /* Slightly scales up the member card on hover */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Enhances shadow on hover */
+}
+
+.image-placeholder {
+  width: 100%;
+  padding-bottom: 100%;
+  background-color: #ddd;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  overflow: hidden; /* Ensures the image placeholder is round */
+  position: relative; /* Allows absolute positioning of the image */
+}
+
+.image-placeholder img {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: opacity 0.3s ease; /* Fade effect on image load */
+}
+
+.member:hover .image-placeholder img {
+  opacity: 0.7; /* Reduce opacity on hover for subtle effect */
+}
+
+.member h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  color: #333; /* Darker text color */
+}
+
+.member p {
+  font-size: 0.9em;
+  color: #666;
+}
+
+@media (max-width: 768px) {
+  .team-members {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .member {
+      max-width: 90%;
+  }
+}
+
+
+/* contact us section  */
+  
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.contact-info {
+  flex: 1;
+  min-width: 300px;
+  margin-right: 20px;
+}
+
+.contact-info h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.contact-info p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.contact-info i {
+  margin-right: 5px;
+}
+
+.contact-form {
+  flex: 1;
+  min-width: 300px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#contact_btn {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background-color: #ffa500;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#contact_btn:hover {
+  background-color: #ff7f00;
+}
+
+@media (max-width: 768px) {
+  .contact-container {
+      flex-direction: column;
+  }
+
+  .contact-info {
+      margin-right: 0;
+      margin-bottom: 20px;
+  }
+}
+
+
+
+/* Footer Section  */
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    /* padding: 10px 0; */
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+footer p{
+    margin: 5px 0;
+}

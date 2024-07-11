@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Team</title>
+    <link rel="stylesheet" href="style3.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+
+</head>
+<body>
+
+    <!-- Navbar Section  -->
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary bg-primary" data-bs-theme="dark" id="navbar1">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="images/logo1.png" alt="Logo" width="30" height="30" class="d-inline-block align-text-top" id="logo">
+                BudgetBuddy
+              </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              <a class="nav-link" href="index2.html">Expenses</a>
+              <a class="nav-link" href="index3.html">Contact Us</a>
+              <a class="nav-link" href="index4.html">Reviews</a>
+              <a class="nav-link" href="faq.html">FAQ</a>
+
+              <!-- <a class="nav-link disabled" aria-disabled="true">Disabled</a> -->
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <!-- core member section  -->
+
+    <section class="our-team">
+        <h2>Our Team</h2>
+        <div class="team-members">
+            <div class="member">
+                <div class="image-placeholder"></div>
+                <h3>Gopalkrushna Sahu</h3>
+                <p>Team Leader</p>
+                <p>Email: gopalkrushna@gmail.com</p>
+            </div>
+            <div class="member">
+                <div class="image-placeholder"></div>
+                <h3>Tapan</h3>
+                <p>Developer</p>
+                <p>Email: tapan@gmail.com</p>
+            </div>
+            <div class="member">
+                <div class="image-placeholder"></div>
+                <h3>Sasmita</h3>
+                <p>Designer</p>
+                <p>Email: sasmita@gmail.com</p>
+            </div>
+            <div class="member">
+                <div class="image-placeholder"></div>
+                <h3>Nityananda</h3>
+                <p>Tester</p>
+                <p>Email: nityananda@gmail.com</p>
+            </div>
+            <div class="member">
+                <div class="image-placeholder"></div>
+                <h3>Soumya</h3>
+                <p>Content Strategist</p>
+                <p>Email: soumya@example.com</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- container section  -->
+
+    <div class="contact-container">
+      <div class="contact-info">
+          <h2 style="text-align: center;">Get In Touch With Us</h2>
+          <p>
+              Have a question? We're here to help! Our friendly and knowledgeable customer experience team will love to listen your queries and want to ensure you will too! Feel free to reach us via phone, email or the form below. You may also refer to our FAQ page to get quick answers to commonly asked questions.
+          </p>
+          <p>
+              <i class="fa fa-map-marker"></i> P.O. Box sitalapalli, Brahmapur, Ganjam<br>
+          </p>
+          <p>
+            <div>
+                <p>General Inquiries: <a href="mailto:contact@budgetbuddy.com">contact@budgetbuddy.com</a></p>
+                <p>Marketing: <a href="mailto:marketing@budgetbuddy.com">marketing@budgetbuddy.com</a></p>
+                <p>Wholesale: <a href="mailto:wholesale@budgetbuddy.com">wholesale@budgetbuddy.com</a></p>
+                <p>Customer Experience: <a href="mailto:customerexperience@budgetbuddy.com">customerexperience@budgetbuddy.com</a></p>
+            </div>            
+          </p>
+      </div>
+      <form class="contact-form">
+          <div class="form-group">
+              <label for="firstName">First Name <span>*</span></label>
+              <input type="text" id="firstName" name="firstName" required>
+          </div>
+          <div class="form-group">
+              <label for="lastName">Last Name <span>*</span></label>
+              <input type="text" id="lastName" name="lastName" required>
+          </div>
+          <div class="form-group">
+              <label for="email">Email <span>*</span></label>
+              <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+              <label for="department">Department <span>*</span></label>
+              <select id="department" name="department" required>
+                  <option value="" disabled selected>- Select -</option>
+                  <option value="general">General Inquiries</option>
+                  <option value="marketing">Marketing</option>
+                  <option value="wholesale">Wholesale</option>
+                  <option value="customer">Customer Experience</option>
+              </select>
+          </div>
+          <div class="form-group">
+              <label for="subject">Subject <span>*</span></label>
+              <input type="text" id="subject" name="subject" required>
+          </div>
+          <div class="form-group">
+              <label for="message">Message <span>*</span></label>
+              <textarea id="message" name="message" rows="4" required></textarea>
+          </div>
+          <button id="contact_btn" type="submit">SUBMIT</button>
+      </form>
+  </div>
+    
+
+
+
+
+    <!-- Footer section  -->
+
+    <footer>
+        <p>&copy; 2024 Expense Manager Team. All rights reserved.</p>
+    </footer>
+
+
+    <script src="script3.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

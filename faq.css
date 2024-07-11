@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+*{
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    /* font-family: "Poppins", sans-serif; */
+    background: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+/* navbar section  */
+
+#navbar1 {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 3;
+  }
+  
+#logo{
+    background-color: black;
+    border-radius: 50%;
+}
+
+/* faq section  */
+
+.faq-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.faq-container h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 32px;
+}
+
+.faq-item {
+    border-bottom: 1px solid #ddd;
+    padding: 15px 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.faq-item:hover {
+    background-color: #f0f0f0;
+}
+
+.faq-item:last-child {
+    border-bottom: none;
+}
+
+.question {
+    font-size: 18px;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.answer {
+    max-height: 0;
+    overflow: hidden;
+    color: #666;
+    font-size: 16px;
+    line-height: 1.5;
+    transition: max-height 0.3s ease, padding 0.3s ease;
+    padding: 0 15px;
+}
+
+.faq-item:hover .question {
+    color: #007BFF;
+}
+
+.faq-item:hover .answer {
+    max-height: 200px; /* Adjust according to content */
+    padding-top: 10px; /* To create some space for the revealed answer */
+    padding-bottom: 25px;
+}
+
+@media (max-width: 600px) {
+    .faq-container {
+        padding: 15px;
+    }
+
+    .faq-item {
+        padding: 10px 0;
+    }
+
+    .question {
+        font-size: 16px;
+    }
+
+    .answer {
+        font-size: 14px;
+    }
+}
+/* Footer Section  */
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    /* padding: 10px 0; */
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+footer p{
+    margin: 5px 0;
+}

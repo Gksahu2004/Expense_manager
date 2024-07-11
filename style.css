@@ -1,0 +1,301 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+*{
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    /* font-family: Arial, sans-serif; */
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    /* font-family: "Poppins", sans-serif; */
+
+    /* background-color: black; */
+
+    /* dark mode  */
+    /* filter: invert(1) hue-rotate(180deg); */
+}
+
+/* img {
+    filter: invert(1) hue-rotate(180deg); 
+} */
+
+/* Navbar section  */
+
+#navbar1 {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 3;
+  }
+
+#logo{
+    background-color: black;
+    border-radius: 50%;
+}
+
+/* Sign-up Section */
+
+.hero {
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    overflow: hidden;
+}
+
+.hero__image {
+    width: 100%;
+    height: 80vh;
+    object-fit: cover;
+    opacity: 0.4;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.hero:hover .hero__image {
+    opacity: 0.45;
+    transform: scale(1.05);
+}
+
+.hero__content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    transition: color 0.5s ease, transform 0.5s ease;
+}
+
+.hero__content h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    white-space: nowrap; /* Keeps the text on a single line */
+    border-right: 0.15em solid orange; /* Creates the typewriter cursor effect */
+    overflow: hidden; /* Ensures the text doesn't overflow its container */
+    display: inline-block;
+    animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+/* Typing effect */
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+/* Blinking cursor effect */
+@keyframes blink-caret {
+    from, to {
+        border-color: transparent;
+    }
+    50% {
+        border-color: orange;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero__content h1 {
+        font-size: 1.5rem; /* Adjust font size for smaller screens */
+        white-space: normal; /* Allows text to wrap on smaller screens */
+        border-right: none; /* Remove border cursor for smaller screens */
+        animation: slideInFromLeft 1s ease-out forwards; /* Apply slide-in animation for smaller screens */
+    }
+}
+
+/* Slide-in animation for smaller screens */
+@keyframes slideInFromLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+.hero__content button {
+    background-color: #007bff;
+    color: white;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.hero__content button a {
+    color: white;
+    text-decoration: none;
+}
+
+.hero__content button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    .hero__content h1 {
+      font-size: 1.5rem;
+    }
+}
+
+/* Container Section  */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: white;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 1 1 calc(33% - 40px);
+    max-width: 100%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.section:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    background-color: #f9f9f9;
+}
+
+.card-image, .category-image, .chart-image, .chaart-image {
+    width: 50%;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.section:hover .card-image, .section:hover .category-image, .section:hover .chart-image, .section:hover .chaart-image {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.text-section {
+    text-align: center;
+    transition: color 0.3s ease;
+}
+
+.section:hover .text-section {
+    color: #007BFF;
+}
+
+@media (max-width: 1024px) {
+    .section {
+        flex: 1 1 calc(50% - 40px);
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .section {
+        flex: 1 1 100%;
+        max-width: 100%;
+        flex-direction: column;
+        transition: none; /* Remove transitions for smaller screens for better performance */
+    }
+    .section:nth-child(even) {
+        flex-direction: column-reverse;
+    }
+    .card-image, .category-image, .chart-image, .chaart-image {
+        width: 100%;
+        height: auto;
+    }
+}
+
+
+/* Contact Details Section  */
+
+/* #contact {
+    padding: 20px;
+}
+
+#contact>h2 {
+    text-align: center;
+}
+
+.team-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.team-member {
+    background-color: rgb(32, 31, 31);
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+    flex: 1 1 calc(33.333% - 40px);
+    box-sizing: border-box;
+    color: white;
+}
+
+.team-member h3 {
+    margin-top: 0;
+}
+
+.team-member p {
+    margin: 5px 0;
+}
+
+.team-member a {
+    color: #1e90ff;
+    text-decoration: none;
+}
+
+.team-member a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .team-member {
+        flex: 1 1 calc(50% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .team-member {
+        flex: 1 1 100%;
+    }
+} */
+
+/* Footer Section  */
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    /* padding: 10px 0; */
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+footer p{
+    margin: 5px 0;
+}

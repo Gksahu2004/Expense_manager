@@ -1,0 +1,231 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+*{
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f5f5f5;
+    /* font-family: "Poppins", sans-serif; */
+    /* font-family: Arial, sans-serif; */
+
+}
+
+
+/* Navbar section  */
+
+#navbar1 {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 3;
+  }
+    
+  #logo{
+    background-color: black;
+    border-radius: 50%;
+  }
+
+  /* Review Section  */
+
+  .rating {
+    text-align: center;
+    background-color: #f5f5f5; /* Lighter background color */
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    /* width: 80%;
+    max-width: 500px; */
+    width: 100%;
+    max-width: 100%;
+    margin: auto;
+}
+
+/* .rating h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333; Darker text color
+} */
+
+.stars {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Spacing between stars */
+    margin-bottom: 20px; /* Space between stars and text */
+}
+
+.stars .star {
+    font-size: 36px; /* Increase font size for stars */
+    color: #ccc; /* Default star color */
+    transition: transform 0.2s ease-in-out, color 0.2s ease;
+    cursor: pointer;
+}
+
+.stars .star:hover,
+.stars .star.active,
+.stars .star.selected {
+    color: #f8d506; /* Bright yellow for hovered and selected stars */
+    transform: scale(1.2); /* Scale effect on hover */
+}
+
+#rating-value {
+    font-size: 1.2em;
+    color: #666;
+    margin-top: 15px;
+}
+
+button {
+    padding: 12px 24px;
+    background-color: #007bff; /* Blue primary color */
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+@media (max-width: 768px) {
+    .stars {
+        flex-wrap: wrap; /* Allow stars to wrap on smaller screens */
+    }
+
+    .stars .star {
+        font-size: 24px; /* Decrease font size on smaller screens */
+    }
+
+    .rating {
+        padding: 20px; /* Adjust padding on smaller screens */
+    }
+}
+
+/* both for rating and testimonial  */
+
+.rating h1,.testimonials h2{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    white-space: nowrap; /* Keeps the text on a single line */
+    border-right: 0.15em solid orange; /* Creates the typewriter cursor effect */
+    overflow: hidden; /* Ensures the text doesn't overflow its container */
+    display: inline-block;
+    animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+/* Typing effect */
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+/* Blinking cursor effect */
+@keyframes blink-caret {
+    from, to {
+        border-color: transparent;
+    }
+    50% {
+        border-color: orange;
+    }
+}
+
+
+  /* testimonial section  */
+  .testimonials {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+}
+
+.testimonial-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    /* background-color: black;
+    padding: 20px;
+    border-radius: 20px; */
+}
+
+.testimonial {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 300px;
+    flex: 1 1 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.testimonial:hover {
+    transform: translateY(-5px); /* Lift up effect on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+.customer-photo {
+    width: 80px;
+    height: 80px;
+    background-color: #ddd;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    overflow: hidden; /* Ensure the image stays within bounds */
+}
+
+.customer-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.customer-name {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.review {
+    font-size: 0.9em;
+    color: #666;
+}
+
+@media (max-width: 768px) {
+    .testimonial-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .testimonial {
+        max-width: 90%;
+    }
+}
+
+/* stars  */
+
+
+
+
+/* Footer Section  */
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    /* padding: 10px 0; */
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+footer p{
+    margin: 5px 0;
+}

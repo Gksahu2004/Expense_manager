@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+:root {
+  --bg-color: #f6f8fa;
+  --text-color: #1d1f27;
+  --main-color: #3a3dbe;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body:not('#navbar') {
+  /* font-family: "Poppins", sans-serif; */
+  background-color: var(--bg-color);
+}
+
+h3{
+  text-align: center;
+}
+
+#navbar1 {
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 3;
+}
+
+#logo{
+  background-color: black;
+  border-radius: 50%;
+}
+
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+header div {
+  margin-bottom: 10px;
+}
+
+header h5 {
+  font-size: 1rem;
+}
+
+section {
+  margin-bottom: 30px;
+}
+
+form {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+form label {
+  margin-bottom: 5px;
+}
+
+form button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+canvas {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
+footer p {
+  margin: 0;
+  padding: 0;
+} */
+
+
+/* Footer Section  */
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  /* padding: 10px 0; */
+  padding: 0;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  margin-top: 20px;
+}
+footer p{
+  margin: 5px 0;
+  padding: 0;
+}
